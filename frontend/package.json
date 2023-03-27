@@ -28,7 +28,6 @@
       "react-app",
       "react-app/jest",
       "plugin:react/recommended",
-      "react/require-default-props: 0",
       "react/prop-types:off"
     ]
   },
