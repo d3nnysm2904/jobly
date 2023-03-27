@@ -64,7 +64,7 @@ const UserProfile = () =>
             <div className="container SignUpForm">
                 <h1>Profile</h1>
                 { error === true ? (
-                    // If there is no Error is all good and we Redirect to Home
+
                     <Navigate exact="true" to="/" />
                 ) : (
                     <h5 className='error' >
@@ -122,7 +122,7 @@ const UserProfile = () =>
                             type="text"
                             name="email"
                             placeholder=""
-                            // pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+
                             value={ formData.email }
                             onChange={ handleChange }
                         ></input>
