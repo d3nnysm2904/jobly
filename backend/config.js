@@ -7,13 +7,13 @@ require("colors");
 
 const SECRET_KEY = process.env.SECRET_KEY || "zBoWN2opM3G5PbAUoM43";
 
-const PORT = +process.env.PORT || 7089;
+const PORT = +process.env.PORT || 3001;
 
 // Use dev database, testing database, or via env var, production database
 function getDatabaseUri() {
   return (process.env.NODE_ENV === "test")
       ? "jobly_test"
-    : process.env.DATABASE_URL || "postgresql://postgres:zBoWN2opM3G5PbAUoM43@containers-us-west-158";
+    : process.env.DATABASE_URL || "postgresql://postgres:zBoWN2opM3G5PbAUoM43@containers-us-west-158.railway.app:7089/railway";
 }
 
 // Speed up bcrypt during tests, since the algorithm safety isn't being tested
