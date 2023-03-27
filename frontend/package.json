@@ -27,9 +27,11 @@
     "extends": [
       "react-app",
       "react-app/jest",
-      "plugin:react/recommended",
-      "react/prop-types:off"
-    ]
+      "plugin:react/recommended"
+    ],
+    "rules": {
+      "react/prop-types": "off"
+    }
   },
   "browserslist": {
     "production": [
