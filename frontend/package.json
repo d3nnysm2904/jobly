@@ -23,11 +23,13 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "react/prop-types": [
+      "off"
+    ],
     "extends": [
       "react-app",
       "react-app/jest",
-      "eslint:recommended",
-      "plugin:react/recommended"
+      "plugin:react/recommended",
     ]
   },
   "browserslist": {
