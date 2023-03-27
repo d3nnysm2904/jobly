@@ -6,6 +6,7 @@
     border: 1px solid #0269df;
     border-radius: 15px;
     padding: 1%;
+    background-color: rgba(240, 136, 0, 0.218);
 }
 
 .error {

@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { Route, Routes, Navigate, BrowserRouter } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 import HomePage from "../Home/Home";
-import LoginForm from "../Auth/LoginForm";
-import SignUpForm from "../Auth/SignUpForm";
-import UserProfile from "../Auth/UserProfile";
+import LoginForm from "../Forms/LoginForm";
+import SignUpForm from "../Forms/SignUpForm";
+import UserProfile from "../Forms/UserProfile";
 import UserContext from "../UseContext";
 import CompaniesList from "../Companies/CompaniesList";
 import CompanyDetail from "../Companies/CompanyDetails";
@@ -44,7 +44,7 @@ function RoutesComponent ( { login, signup } )
                     element={ <SignUpForm signup={ signup } /> }
                 ></Route>
 
-                {/* Ensuring that the user is login to access this routes */ }
+
                 { SecureRoute( "/profile", <UserProfile /> ) }
                 { SecureRoute( "/companies", <CompaniesList /> ) }
                 { SecureRoute( "/companies/:handle", <CompanyDetail /> ) }

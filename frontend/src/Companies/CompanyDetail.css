@@ -1,5 +1,5 @@
 .CompanyDetail {
-    width: 80%;
+    /* width: max-content; */
     display: flex;
     margin-top: 20px;
 

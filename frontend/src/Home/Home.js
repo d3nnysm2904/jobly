@@ -27,7 +27,7 @@ const HomePage = () =>
                 <h1 className="mb-6 font-weight-bold" >
                     Jobly
                 </h1>
-                <p>All the jobs in one, convenient place.</p>
+                <p className="welcome">All the jobs in one, convenient place.</p>
                 { currUser ? <h2>Welcome Back, { currUser.firstName } !</h2> : NeedLogIn() }
             </div>
         </div>

@@ -7,7 +7,7 @@ const CompaniesList = () =>
 {
     const [ companies, setCompanies ] = useState( [] );
 
-    useEffect( function PreLoadInfo ()
+    useEffect( function LoadInfo ()
     {
         async function getCompanies ()
         {
@@ -33,7 +33,7 @@ const CompaniesList = () =>
                     style={ {
                         display: "flex",
                         justifyContent: "center",
-                        marginTop: "20px",
+                        marginTop: "1px",
                     } }
                 >
                     <CompanyCard company={ c } />

@@ -23,8 +23,6 @@ const CompanyDetail = () =>
         [ handle ]
     );
 
-    // useEffect run sometimes 2 times without this line of code this component break
-    // adding this little line fix the problem
     if ( !company ) return;
 
     return (

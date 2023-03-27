@@ -10,7 +10,7 @@ const JobCard = ( { job } ) =>
 
     const Aplied = () =>
     {
-        return currUser.applications.includes( job.id );
+        return currUser.applications?.includes( job?.id );
     };
 
     const Apply = () =>
@@ -40,7 +40,7 @@ const JobCard = ( { job } ) =>
                             Apply
                         </button>
                     ) : (
-                        <button disabled className="btn btn-succes">
+                            <button disabled className="btn btn-success">
                             Applied
                         </button>
                     ) }

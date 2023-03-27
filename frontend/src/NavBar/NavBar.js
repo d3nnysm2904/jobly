@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
 import UserContext from "../UseContext";
+import { Link, NavLink } from "react-router-dom";
 
-const NoUserLogIn = () =>
+const NotLogIn = () =>
 {
     return (
         <ul className="navbar-nav ml-auto">
@@ -57,7 +57,7 @@ const NavBar = () =>
             <Link className="navbar-brand" to="/">
                 Jobly
             </Link>
-            { currUser ? isLogIn( currUser.firstName, logout ) : NoUserLogIn() }
+            { currUser ? isLogIn( currUser.firstName, logout ) : NotLogIn() }
         </nav>
     );
 };
