@@ -1,0 +1,14 @@
+.Home {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    color: rgb(112, 172, 240);
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    color: black;
+}
