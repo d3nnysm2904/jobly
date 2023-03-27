@@ -15,7 +15,7 @@ const CompanyCard = ( { company } ) =>
             <div className="card-body">
                 <p className="card-text">{ company.description }</p>
                 { company.logoUrl ? (
-                    <img className="float-right" src={ company.logoUrl } />
+                    <img alt="" className="float-right" src={ company.logoUrl } />
                 ) : (
                     ""
                 ) }
