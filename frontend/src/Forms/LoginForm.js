@@ -34,7 +34,7 @@ const LoginForm = ( { login } ) =>
                 { error === true ? (
                     <Navigate exact="true" to="/" />
                 ) : (
-                    <h5 className='error'>
+                        <h5 className="error">
                         { error }
                     </h5>
                 ) }
