@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const BASE_URL = process.env.REACT_APP_BASE_URL || "harmonious-degree-production.up.railway.app";
+const BASE_URL = process.env.REACT_APP_BASE_URL 
 
 /** API Class.
  *
